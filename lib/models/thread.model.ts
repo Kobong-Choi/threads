@@ -26,7 +26,7 @@ const threadSchema = new mongoose.Schema({
     },
   ],
 });
-// mongoose.model(): To use our schema definition, we need to convert our blogSchema into a Model we can work with.
+// mongoose.model(): To use our schema definition, we need to convert our threadSchema into a Model we can work with.
 const Thread = mongoose.models.Thread || mongoose.model("Thread", threadSchema);
 
 export default Thread;
